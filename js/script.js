@@ -28,4 +28,7 @@ function newItem() {
   crossOutButton.append(document.createTextNode("X"));
   li.append(crossOutButton);
   //added a delete button
+
+  crossOutButton.on("click", deleteListItem);
+  //added an eventlistener to the crossOutButton()
 }
