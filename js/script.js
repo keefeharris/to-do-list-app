@@ -21,4 +21,6 @@ function newItem() {
     li.toggleClass(strike);
   }
   //function crossOut is created to crossout any list item added to the list
+  li.on("dblclick", crossOut);
+  //when user double clicks on the li variable, the crossOutfunction is triggered
 }
