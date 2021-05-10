@@ -16,4 +16,9 @@ function newItem() {
     if inputValue has no entry then the window will use that alert
     otherwise the id list is selected from the dom and the li with the valueInput is added to the list
   */
+
+  function crossOut() {
+    li.toggleClass(strike);
+  }
+  //function crossOut is created to crossout any list item added to the list
 }
