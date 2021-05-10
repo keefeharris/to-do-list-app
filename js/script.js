@@ -18,10 +18,12 @@ function newItem() {
   */
 
   function crossOut() {
-    li.toggleClass(strike);
+    li.toggleClass("strike");
   }
   //function crossOut is created to crossout any list item added to the list
-  li.on("dblclick", crossOut);
+  li.on("dblclick", function crossOut() {
+    li.toggleClass("strike");
+  });
   //when user double clicks on the li variable, the crossOutfunction is triggered
 
   let crossOutButton = $("<crossOutButton></crossOutButton>");
