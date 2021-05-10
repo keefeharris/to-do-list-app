@@ -31,4 +31,8 @@ function newItem() {
 
   crossOutButton.on("click", deleteListItem);
   //added an eventlistener to the crossOutButton()
+  function deleteListItem() {
+    li.addClass("delete");
+  }
+  //delete function was created to delete listitem when crossoutbutton is clicked
 }
