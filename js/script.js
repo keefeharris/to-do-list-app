@@ -23,4 +23,9 @@ function newItem() {
   //function crossOut is created to crossout any list item added to the list
   li.on("dblclick", crossOut);
   //when user double clicks on the li variable, the crossOutfunction is triggered
+
+  let crossOutButton = $("<crossOutButton></crossOutButton>");
+  crossOutButton.append(document.createTextNode("X"));
+  li.append(crossOutButton);
+  //added a delete button
 }
