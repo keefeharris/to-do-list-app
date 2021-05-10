@@ -35,4 +35,7 @@ function newItem() {
     li.addClass("delete");
   }
   //delete function was created to delete listitem when crossoutbutton is clicked
+
+  $("#list").sortable();
+  //enables a group of list elements to be sortable
 }
